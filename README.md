@@ -1,7 +1,7 @@
 # 🏗️ Data Warehouse — Medallion Architecture
 ### *From Raw Chaos to Business Intelligence, One Layer at a Time*
 
-![Architecture Diagram](docs/architecture_diagram.png)
+![Architecture Diagram](docs/data_architecture.png)
 
 ---
 
