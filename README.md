@@ -1,7 +1,7 @@
 # 🏗️ Data Warehouse — Medallion Architecture
 ### *From Raw Chaos to Business Intelligence, One Layer at a Time*
 
-![Architecture Diagram](docs/data_architecture.png)
+![Architecture Diagram](docs/architecture_diagram.png)
 
 ---
 
@@ -94,6 +94,10 @@ The Gold layer exposes **business-facing views** in a classic **Star Schema** �
 
 ![Star Schema ERD](docs/star_schema_erd.png)
 
+**ETL Transformation Logic:**
+
+![ETL Flow Diagram](docs/etl_flow_diagram.png)
+
 **Views Created:**
 
 | Object | Type | Description |
@@ -166,6 +170,20 @@ The `tests/quality_check_silver.SQL` script validates the Silver layer after eve
 - 🔍 Standardized country names and category labels
 
 > **Goal:** Every check should return **zero rows**. Any result means the load procedure needs adjustment.
+
+---
+
+## 📚 Documentation
+
+All detailed documentation lives in the `docs/` folder:
+
+| Document | Description |
+|----------|-------------|
+| [📖 Data Dictionary](docs/data_dictionary.md) | Every table and column explained — what it means, where it comes from, and how it was transformed |
+| [🧠 Design Decisions & Known Issues](docs/design_decisions.md) | The *why* behind key architectural choices, plus honest documentation of current limitations |
+| [🏗️ Architecture Diagram](docs/architecture_diagram.png) | End-to-end visual of the Medallion pipeline |
+| [🗺️ Star Schema ERD](docs/star_schema_erd.png) | Entity relationship diagram of the Gold layer |
+| [🔄 ETL Flow Diagram](docs/etl_flow_diagram.png) | Visual walkthrough of key transformation logic |
 
 ---
 
